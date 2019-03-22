@@ -1,17 +1,43 @@
 *{
 	box-sizing: border-box;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 body{
 	background-color: #ecf0f1;
 }
 
-nav{
-	background-color: #2980b9;
+/* CABEÇALHO */
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #100E15;
 }
 .logo{
-	font-family: 'Baloo Chettan', cursive;
+	color: #FFF;
+	font-family: 'Germania One', cursive;
 }
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #5d2a48;
+}
+.dropdown-content{
+	background-color: #100E15;
+}
+.dropdown-content li:hover{
+	background-color: #5d2a48;
+}
+.dropdown-content li a{
+	color: #FFF;
+	text-align: center;
+}
+
+
+/* POSTANGES - NAVEGAÇÃO */
 
 .prev-next{
 	display: flex;
@@ -19,6 +45,27 @@ nav{
 	justify-content: space-between;
 }
 
+.caixa, .caixa-news{
+	margin: auto;
+	margin-top: 15px;
+}
+.caixa-news{
+	background-color: #FFF;
+}
+
+/* CARDS*/
+
+.card{
+	height: 410px;
+	max-height: 410px;
+}
+.card img{
+	height: 170px;
+}
+.links{
+	background-color: #2980b9;
+	margin: 0 20px;
+}
 .title{
 	color: #2980b9;
 	font-size: 20pt;
@@ -32,21 +79,34 @@ nav{
 	font-size: 12pt;
 }
 
-.caixa{
-	margin: auto;
-	margin-top: 15px;
+/* POSTS */
+.titleANDsubtitle h1{
+	text-align: center;
+	font-family: 'Germania One', cursive;
 }
-.card{
-	height: 410px;
-	max-height: 410px;
+.titleANDsubtitle h2{
+	text-align: center;
+	font-family: 'Germania One', cursive;
 }
-.card img{
-	height: 170px;
+.contentPost{
+	text-align: justify;
 }
-.links{
-	background-color: #2980b9;
-	margin: 0 20px;
+.contentPost iframe{
+	border: none;
+	width: 100%;
 }
+
+
+/* FOOTER */
+.page-footer{
+	background-color: #100E15;
+	margin-top: 20px;
+}
+.page-footer .footer-copyright{
+	background-color: #5d2a48;
+	text-align: center;
+}
+/* MEDIA QUERIES */
 
 @media (min-width: 576px){
 	.caixa{
@@ -54,17 +114,55 @@ nav{
 	}
 }
 @media (min-width: 768px){
-	.caixa{
+	.caixa, .caixa-news{
 		width: 90%;
 	}
 }
 @media (min-width: 992px){
+	header{
+		height: 100px;
+	}
+	header .logo{
+		font-size: 30pt;
+	}
+
 	.caixa{
 		width: 95%;
+	}
+
+	.caixa-news{
+		width: 80%;
+		padding: 25px;
+	}
+	.titleANDsubtitle h1{
+		font-size: 30pt;
+	}
+	.titleANDsubtitle h2{
+		font-size: 18pt;
+	}
+	.contentPost h3{
+		font-size: 18pt;
+	}
+	.contentPost h4{
+		font-size: 18pt;
 	}
 }
 @media (min-width: 1200px){
 	.caixa{
 		width: 80%;
+	}
+
+	.caixa-news{
+		width: 70%;
+		padding: 25px;
+	}
+	.titleANDsubtitle h1{
+		font-size: 30pt;
+	}
+	.titleANDsubtitle h2{
+		font-size: 22pt;
+	}
+	.contentPost h3, .contentPost h4{
+		font-size: 22pt;
 	}
 }

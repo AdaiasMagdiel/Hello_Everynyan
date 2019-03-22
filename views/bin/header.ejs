@@ -2,19 +2,35 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8">
-     	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Rubik" rel="stylesheet">
-		<link rel="stylesheet" href="stylesheets/style.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Germania+One|Montserrat" rel="stylesheet"> 
+		<link rel="stylesheet" href="/stylesheets/style.css"> 
+		
+		 <link rel="shortcut icon" href="/images/favicon.jpg"> 
 
 		<title>Hello Everynyan!</title>
 	</head>
 	<body>
+	
+		<header>
+			<a href="/" class="logo">Hello Everynyan!</a>
+		</header>
 
-	<nav>
-		<div class="nav-wrapper">
-			<a href="/" class="brand-logo center logo">Hello Everynyan!</a>
-		</div>
-	</nav>
+		
+			<!-- Anime United -->
+			<ul id="AnimeUnitedDropdown" class="dropdown-content">
+				<li><a href="/">Notícias</a></li>
+				<li><a href="/nau/previews">Primeiras Impressões</a></li>
+				<li><a href="/nau/reviews">Reviews</a></li>
+			</ul>
+
+			<nav>
+				<div class="nav-wrapper">
+					<ul class="hide-on-med-and-down">
+						<li><a class="dropdown-trigger" href="#!" data-target="AnimeUnitedDropdown">Anime United<i class="material-icons right">arrow_drop_down</i></a></li>
+					</ul>
+				</div>
+			</nav>

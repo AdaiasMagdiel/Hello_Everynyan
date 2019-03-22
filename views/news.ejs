@@ -1,6 +1,18 @@
-<img src="<%= content[0].img %>" alt="<%= content[0].alt %>">
+<%- include("bin/header"); %>
+	<div class="caixa-news">
 
-<h1><%= content[0].title %></h1>
-<h2><%= content[0].subtitle %></h2>
+		<div class="img-post">
+			<img src="<%= content[0].img %>" alt="<%= content[0].alt %>" class="responsive-img">
+		</div>
 
-<%- content[0].text %>
+		<div class="titleANDsubtitle">
+			<h1><%= content[0].title %></h1>
+			<h2><%= content[0].subtitle %></h2>
+		</div>
+
+		<div class="contentPost">
+			<%- content[0].text %>
+		</div>
+
+	</div>
+<%- include("bin/footer"); %>
